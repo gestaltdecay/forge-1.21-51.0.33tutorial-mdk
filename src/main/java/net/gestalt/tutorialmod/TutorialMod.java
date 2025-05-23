@@ -54,10 +54,12 @@ public class TutorialMod {
             event.accept(ModItems.GOBOG);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-        event.accept(ModBlocks.GOBOGBLOCK);
-
+            event.accept(ModBlocks.GOBOGBLOCK); }
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.GOBLOCK);
         }
-    }
+        }
+
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
@@ -72,5 +74,5 @@ public class TutorialMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
-    }
-}
+    }}
+

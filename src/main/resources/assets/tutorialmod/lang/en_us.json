@@ -1,5 +1,6 @@
 {
   "item.tutorialmod.crudegobog": "Crude Gobog Coin",
   "item.tutorialmod.gobog": "Gobog Coin",
-  "block.tutorialmod.gobogblock": "Gobog Block"
+  "block.tutorialmod.gobogblock": "Gobog Block",
+  "block.tutorialmod.goblock": "Goblock"
 }

@@ -23,6 +23,13 @@ public class ModBlocks {
 
     ));
 
+    public static final RegistryObject<Block> GOBLOCK = registerBlock("goblock", () -> new Block(BlockBehaviour.Properties.of()
+            .strength(1f).sound(SoundType.WOOD)
+
+    ));
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
