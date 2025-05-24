@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "tutorialmod:block/gobogpile" },
+    "type=top": { "model": "tutorialmod:block/gobogpile_top" },
+    "type=double": { "model": "tutorialmod:block/gobogpileblock" }
+  }
+}

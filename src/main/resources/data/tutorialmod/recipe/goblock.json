@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "tutorialmod:gobog"
+
+    },
+    "B": {
+      "item": "tutorialmod:crudegobog"
+
+    },
+    "C": {
+      "item": "tutorialmod:gobogblock"
+
+    }
+  },
+  "pattern": [
+    " A ",
+    "BCB",
+    " A "
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:goblock"
+  }
+
+
+
+}

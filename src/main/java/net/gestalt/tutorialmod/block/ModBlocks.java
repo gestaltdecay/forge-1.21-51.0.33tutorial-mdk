@@ -2,9 +2,12 @@ package net.gestalt.tutorialmod.block;
 
 import net.gestalt.tutorialmod.TutorialMod;
 import net.gestalt.tutorialmod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,7 +27,13 @@ public class ModBlocks {
     ));
 
     public static final RegistryObject<Block> GOBLOCK = registerBlock("goblock", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(1f).sound(SoundType.WOOD)
+            .strength(1f).sound(SoundType.WOOD).requiresCorrectToolForDrops()
+
+    ));
+
+    public static final RegistryObject<SlabBlock> GOBOGPILE = registerBlock("gobogpile",
+            () -> new SlabBlock(BlockBehaviour.Properties.of()
+            .strength(1f).sound(SoundType.AMETHYST_CLUSTER)
 
     ));
 

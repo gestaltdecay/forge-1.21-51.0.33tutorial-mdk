@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "tutorialmod:block/gobogpile_bottom",
+    "side": "tutorialmod:block/gobogpile_side",
+    "top": "tutorialmod:block/gobogpile_top"
+  }
+}

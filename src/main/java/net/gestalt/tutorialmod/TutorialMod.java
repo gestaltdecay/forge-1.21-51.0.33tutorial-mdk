@@ -2,6 +2,7 @@ package net.gestalt.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.gestalt.tutorialmod.block.ModBlocks;
+import net.gestalt.tutorialmod.item.ModCreativeModeTabs;
 import net.gestalt.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,8 @@ public class TutorialMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -54,7 +57,9 @@ public class TutorialMod {
             event.accept(ModItems.GOBOG);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.GOBOGBLOCK); }
+            event.accept(ModBlocks.GOBOGBLOCK);
+            event.accept(ModBlocks.GOBOGPILE);
+        }
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.GOBLOCK);
         }

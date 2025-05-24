@@ -2,5 +2,8 @@
   "item.tutorialmod.crudegobog": "Crude Gobog Coin",
   "item.tutorialmod.gobog": "Gobog Coin",
   "block.tutorialmod.gobogblock": "Gobog Block",
-  "block.tutorialmod.goblock": "Goblock"
+  "block.tutorialmod.goblock": "Goblock",
+  "creativetab.tutorialmod.gobog_items_tab": "Gobog Items",
+  "creativetab.tutorialmod.gobog_blocks_tab": "Gobog Blocks",
+  "block.tutorialmod.gobogpile": "Gobog Pile"
 }
